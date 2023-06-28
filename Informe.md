@@ -1,13 +1,17 @@
 ﻿# Laboratorio 3: Programación asistida para Frameworks sobre Cálculo Distribuido
 
+En este laboratorio vamos a implementar un lector automático de feeds,sobre una arquitectura distribuida, a través del
+framework Spark, utilizando como lenguaje de programación Java.
 
-### Elección de una solución
+### Funcionalidad
+El usuario de nuestro lector establece, mediante un archivo en formato .json, los
+distinto sitios (ej: new york times, etc) y sus respectivos tópicos (sports, business, etc) de
+los cuales obtener los diferentes feeds a mostrar por pantalla en forma legible y
+amigable para el usuario. Además, se agrega una funcionalidad a nuestro lector para
+computar heurísticamente las entidades nombradas más mencionadas en la lista de
+feeds.
 
-Después de evaluar los tres proyectos individuales presentados por los miembros del grupo y observar la similitud en la estructura del código y el uso del framework Spark, se decidió seleccionar el proyecto desarrollado por la alumna Malena Bustamante. Esta decisión se basó en las siguientes razones:
 
-- Malena demostró un aprovechamiento efectivo de las funcionalidades proporcionadas por Spark tanto en el procesamiento de los pedidos de los feeds como en la búsqueda de entidades nombradas.
-
-- En particular, al implementar el modelo de Map-Reduce para la búsqueda de entidades nombradas, Malena utilizó de manera adecuada tanto las funciones de mapeo (flatMap y mapToPair) como las de reducción (reduceByKey).
 
 ### Incorporación de la funcionalidad de recuperar documentos por palabras clave
 
